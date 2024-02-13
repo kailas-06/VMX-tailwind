@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <script src="../js/tailwind.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <div class="header shadow-lg px-6 xlg:px-0">
+            <!-- Navbar -->
+            <nav class="container mx-auto max-w-6xl">
+                <div class="flex justify-between md:block">
+                    <div class="flex justify-between">
+                        <div>
+                            <!-- Website Logo -->
+                            <a href="#" class="flex items-center py-4 px-2 pl-0">
+                                <span class="font-bold text-lg text-orange-500 cursor-pointer">VMX</span>
+                            </a>
+                        </div>
+                        <!-- Primary Navbar items -->
+                        <div class="hidden md:flex items-center space-x-5 text-white navmenu">
+                            <a href="http://127.0.0.1:5501/public/index.html"
+                                class="px-4 text-lg cursor-pointer hover:text-rose-400 active">Products</a>
+                            <a href="http://127.0.0.1:5501/public/service.html"
+                                class="px-4 text-lg cursor-pointer hover:text-rose-400">Services</a>
+                            <a href="javascript:void(0);" class="px-4 text-lg cursor-pointer hover:text-rose-400">Case
+                                Study</a>
+                            <a href="javascript:void(0);" class="px-4 text-lg cursor-pointer hover:text-rose-400">About
+                                Us</a>
+                            <a href="javascript:void(0);"
+                                class="px-4 text-lg cursor-pointer hover:text-rose-400">Contact Us</a>
+                        </div>
+                    </div>
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-center mr-3">
+                        <button class="outline-none mobile-menu-button">
+                            <svg class=" w-6 h-6 text-white brightness-1" x-show="!showMenu" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+
+                    </div>
+                </div>
+
+                <!-- mobile menu -->
+                <div class="hidden w-full mobile-menu text-white" id="mobile-menu">
+                    <span id="closebtn" class="closebtn">X</span>
+                    <ul class="">
+                        <li href="http://127.0.0.1:5501/public/index.html" class="px-4 py-3 text-lg cursor-pointer">
+                            Products</li>
+                        <li href="javascript:void(0);" class="px-4 py-3 text-lg cursor-pointer">Services</li>
+                        <li href="javascript:void(0);" class="px-4 py-3 text-lg cursor-pointer">Case Study</li>
+                        <li href="javascript:void(0);" class="px-4 py-3 text-lg cursor-pointer">About Us</li>
+                        <li href="javascript:void(0);" class="px-4 py-3 text-lg cursor-pointer">Contact Us
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- banner start -->
+
+        <section>
+            <div class="banner px-6 xlg:px-0">
+                <div class="container  mx-auto max-w-6xl">
+                    <div class="text-white pt-52 max-w-lg">
+                        <p class="font-montserrat text-2xl mb-6 lg:pr-10">65% IT Leaders have already accelerated
+                            cloud adoption, running more applications
+                            in public & private clouds.</p>
+                        <h1 class="text-3xl lg:text-5xl uppercase font-bold mb-12 leading-12">Web Werks VMX Cloud
+                            Engineering pLATFORM</h1>
+                        <button class="border border-orange-400 text-xl px-6 rounded-full pt-1 pb-2">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- banner end -->
+
+        <!-- section tab start-->
+
+        <section class="tab-section">
+            <div class="container mx-auto w-mx-6xl">
+                <div class="py-20 mx-14">
+                    <div class="flex-none lg:flex gap-10 justify-between">
+                        <div class="title-name divide-y divide-gray-200 w-full lg:w-2/5">
+                            <a href="javascript:void(0);" class="tab-a active-a flex py-3 leading-5 items-center"
+                                data-id="tab1">
+                                <img src="../images/manage-business.png" alt="">
+                                <h4 class="text-xl">Manage Your Business IT <br />
+                                    Infrastructure like a PRO</h4>
+                                <i class="zmdi zmdi-chevron-right"></i>
+                            </a>
+                            <a href="javascript:void(0);" class="tab-a flex py-3 leading-5 items-center" data-id="tab2">
+                                <img src="../images/ecosystem.png" alt="">
+                                <h4 class="text-xl">Rich Interconnection
+                                    Ecosystem</h4>
+                                <i class="zmdi zmdi-chevron-right"></i>
+                            </a>
+                            <a href="javascript:void(0);" class="tab-a flex py-3 leading-5 items-center" data-id="tab3">
+                                <img src="../images/laptops.png" alt="">
+                                <h4 class="text-xl">Experience Ease of Migration</h4>
+                                <i class="zmdi zmdi-chevron-right"></i>
+                            </a>
+                            <a href="javascript:void(0);" class="tab-a flex py-3 leading-5 items-center" data-id="tab4">
+                                <img src="../images/vmx-datacenter.png" alt="">
+                                <h4 class="text-xl">World-class Colocation Services</h4>
+                                <i class="zmdi zmdi-chevron-right"></i>
+                            </a>
+                            <a href="javascript:void(0);" class="tab-a flex py-3 leading-5 items-center" data-id="tab5">
+                                <img src="../images/unlock.png" alt="">
+                                <h4 class="text-xl">Unlock The Best Of Compliance </h4>
+                                <i class="zmdi zmdi-chevron-right"></i>
+                            </a>
+                            <a href="javascript:void(0);" class="tab-a flex py-3 leading-5 items-center" data-id="tab6">
+                                <img src="../images/vmx-pri-cloud.png" alt="">
+                                <h4 class="text-xl">Effortlessly Manage Clouds</h4>
+                                <i class="zmdi zmdi-chevron-right"></i>
+                            </a>
+                            <a href="javascript:void(0);" class="tab-a flex py-3 leading-5 items-center" data-id="tab7">
+                                <img src="../images/infrastructure.png" alt="">
+                                <h4 class="text-xl">Manage Your Business IT
+                                    Infrastructure like a PRO</h4>
+                                <i class="zmdi zmdi-chevron-right"></i>
+                            </a>
+                            <a href="javascript:void(0);" class="tab-a flex py-3 leading-5 items-center" data-id="tab8">
+                                <img src="../images/vmx-support.png" alt="">
+                                <h4 class="text-xl">Manage Your Business IT
+                                    Infrastructure like a PRO</h4>
+                                <i class="zmdi zmdi-chevron-right"></i>
+                            </a>
+                        </div>
+                        <div class="tab-content w-full lg:w-3/5 mt-8 lg:mt-0">
+                            <div class="tab tab-active" data-id="tab1">
+                                <h2 class="text-3xl font-semibold mb-4">Manage Your Business IT <br>
+                                    Infrastructure like a PRO</h2>
+                                <p class="mb-6 font-montserrat">1 Set yourself free from the cost of IT legacy,
+                                    challenges, and complexities while you house, protect and connect your company’s
+                                    critical IT infrastructure and integrate all storage, compute, and other networking
+                                    assets to run any app.</p>
+                                <img src="../images/thinks-IT.png" alt="">
+                            </div>
+                            <div class="tab" data-id="tab2">
+                                <h2 class="text-3xl font-semibold mb-4">Rich Interconnection Ecosystem</h2>
+                                <p class="mb-6">2 Set yourself free from the cost of IT legacy, challenges, and
+                                    complexities while you house, protect and connect your company’s critical IT
+                                    infrastructure and integrate all storage, compute, and other networking assets to
+                                    run any app.</p>
+                                <img src="../images/thinks-IT.png" alt="">
+                            </div>
+                            <div class="tab " data-id="tab3">
+                                <h2 class="text-3xl font-semibold mb-4">Experience Ease of Migration</h2>
+                                <p class="mb-6">3 Set yourself free from the cost of IT legacy, challenges, and
+                                    complexities while you house, protect and connect your company’s critical IT
+                                    infrastructure and integrate all storage, compute, and other networking assets to
+                                    run any app.</p>
+                                <img src="../images/thinks-IT.png" alt="">
+                            </div>
+                            <div class="tab " data-id="tab4">
+                                <h2 class="text-3xl font-semibold mb-4">World-class Colocation Services</h2>
+                                <p class="mb-6">4 Set yourself free from the cost of IT legacy, challenges, and
+                                    complexities while you house, protect and connect your company’s critical IT
+                                    infrastructure and integrate all storage, compute, and other networking assets to
+                                    run any app.</p>
+                                <img src="../images/thinks-IT.png" alt="">
+                            </div>
+                            <div class="tab" data-id="tab5">
+                                <h2 class="text-3xl font-semibold mb-4">Unlock The Best Of Compliance</h2>
+                                <p class="mb-6">5 Set yourself free from the cost of IT legacy, challenges, and
+                                    complexities while you house, protect and connect your company’s critical IT
+                                    infrastructure and integrate all storage, compute, and other networking assets to
+                                    run any app.</p>
+                                <img src="../images/thinks-IT.png" alt="">
+                            </div>
+                            <div class="tab " data-id="tab6">
+                                <h2 class="text-3xl font-semibold mb-4">Effortlessly Manage Clouds</h2>
+                                <p class="mb-6">6 Set yourself free from the cost of IT legacy, challenges, and
+                                    complexities while you house, protect and connect your company’s critical IT
+                                    infrastructure and integrate all storage, compute, and other networking assets to
+                                    run any app.</p>
+                                <img src="../images/thinks-IT.png" alt="">
+                            </div>
+                            <div class="tab " data-id="tab7">
+                                <h2 class="text-3xl font-semibold mb-4">Stay In Sync With Hyperconverged Infrastructure
+                                </h2>
+                                <p class="mb-6">7 Set yourself free from the cost of IT legacy, challenges, and
+                                    complexities while you house, protect and connect your company’s critical IT
+                                    infrastructure and integrate all storage, compute, and other networking assets to
+                                    run any app.</p>
+                                <img src="../images/thinks-IT.png" alt="">
+                            </div>
+                            <div class="tab " data-id="tab8">
+                                <h2 class="text-3xl font-semibold mb-4">Unconditional Support</h2>
+                                <p class="mb-6">8 Set yourself free from the cost of IT legacy, challenges, and
+                                    complexities while you house, protect and connect your company’s critical IT
+                                    infrastructure and integrate all storage, compute, and other networking assets to
+                                    run any app.</p>
+                                <img src="../images/thinks-IT.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section tab end-->
+
+        <!-- section our products start -->
+        <section class="our-product bg-[#FAFBFF]">
+            <div class="container mx-auto w-mx-6xl">
+                <div class="py-20 mx-8 lg:mx-14">
+                    <div class="grid lg:grid-cols-2 gap-10 inner-product">
+                        <div class="w-full bg-white inline-grid filter drop-shadow-2xl rounded-2xl px-12 py-12">
+                            <div class="">
+                                <div class="h-20 p-3 w-20 rounded-3xl block bg-[#ECEEFF] mb-6">
+                                    <img src="../images/vmx-pri-cloud.png" alt="" class="h-14 w-14">
+                                </div>
+                            </div>
+                            <div class="lg:w-80 mb-5">
+                                <h4 class="text-2xl font-semibold mb-3">VMX Infinite : Hosted Private Cloud</h4>
+                                <p class="text-lg">Experience utmost flexibility of the hosted private cloud in your
+                                    data center, colocations, and at the edge!</p>
+                            </div>
+                            <div>
+                                <button
+                                    class="btn pointer min-w-fit text-orange-400 border py-1 px-10 border-orange-400 rounded-3xl">Explore</button>
+                            </div>
+                        </div>
+                        <div class="w-full bg-white filter drop-shadow-2xl inline-grid rounded-2xl px-12 py-12">
+                            <div class="">
+                                <div class="h-20 p-3 w-20 lg:float-right rounded-3xl block bg-[#ECEEFF] mb-6">
+                                    <img src="../images/vmx-service.png" alt="" class="h-14 w-14">
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <div class="lg:w-80 mb-5 lg:float-right">
+                                    <h4 class="text-2xl font-semibold mb-3">VMX-DR : Disaster Recovery-as-a-Service</h4>
+                                    <p class="text-lg">Making disaster recovery a
+                                        hassle-free task for your
+                                        modern business!</p>
+                                </div>
+                            </div>
+                            <div>
+                                <button
+                                    class="btn lg:float-right pointer text-orange-400  py-1 px-10 border border-orange-400 rounded-3xl">Explore</button>
+                            </div>
+                        </div>
+                        <div class="w-full bg-white inline-grid filter drop-shadow-2xl rounded-2xl px-12 py-12">
+                            <div class="">
+                                <div class="h-20 p-3 w-20 rounded-3xl block bg-[#ECEEFF] mb-6">
+                                    <img src="../images/vmx-pub-cloud.png" alt="" class="h-14 w-14">
+                                </div>
+                            </div>
+                            <div class="lg:w-80 mb-5">
+                                <h4 class="text-2xl font-semibold mb-3">VMX Infinite : Hosted Private Cloud</h4>
+                                <p class="text-lg">Experience utmost flexibility of the hosted private cloud in your
+                                    data center, colocations, and at the edge!</p>
+                            </div>
+                            <div>
+                                <button
+                                    class="btn pointer min-w-fit text-orange-400 border py-1 px-10 border-orange-400 rounded-3xl">Explore</button>
+                            </div>
+                        </div>
+                        <div class="w-full bg-white filter drop-shadow-2xl inline-grid rounded-2xl px-12 py-12">
+                            <div class="">
+                                <div class="h-20 p-3 w-20 lg:float-right rounded-3xl block bg-[#ECEEFF] mb-6">
+                                    <img src="../images/vmx-connecto.png" alt="" class="h-14 w-14">
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <div class="lg:w-80 mb-5 lg:float-right">
+                                    <h4 class="text-2xl font-semibold mb-3">VMX-DR : Disaster Recovery-as-a-Service</h4>
+                                    <p class="text-lg">Making disaster recovery a
+                                        hassle-free task for your
+                                        modern business!</p>
+                                </div>
+                            </div>
+                            <div>
+                                <button
+                                    class="btn lg:float-right pointer text-orange-400  py-1 px-10 border border-orange-400 rounded-3xl">Explore</button>
+                            </div>
+                        </div>
+                        <div class="center-text invisible lg:visible lg:block">Our Products</div>
+                        <div class="circle-design hidden lg:block"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section our products end-->
+
+        <section class="count">
+            <div class="container mx-auto w-mx-6xl">
+                <div class="py-20 mx-8 lg:mx-14">
+                    <h2
+                        class="text-3xl font-bold text-center after:content-[''] after:mt-1.5 after:block after:m-auto after:h-1 after:bg-orange-400 after:w-16 text-kps-400 font-montserrat">
+                        Why Count on WW VMX?</h2>
+                    <div class="grid lg:grid-cols-2 mt-16 gap-6">
+                        <div class="lg:flex border border-gray-100 p-8 lg:p-12">
+                            <img src="../images/vmx-nextgen.png" class="h-12 w-12 mr-5 mt-4" alt="">
+                            <div>
+                                <h4 class="text-2xl text-semibold mb-2">Next-Gen Innovation</h4>
+                                <p>We leverage cutting-edge technologies that merge global innovations with local
+                                    offerings in the long run</p>
+                            </div>
+                        </div>
+                        <div class="flex border border-gray-100 p-6 lg:p-12">
+                            <img src="../images/vmx-datacenter.png" class="h-12 w-12 mr-5 mt-4" alt="">
+                            <div>
+                                <h4 class="text-2xl text-semibold mb-2">Full Stack Data Center Soln</h4>
+                                <p>Explore a comprehensive range of data center & ICT solutions backed by cloud
+                                    infrastructure, security solutions, and managed networks.</p>
+                            </div>
+                        </div>
+                        <div class="flex border border-gray-100 p-6 lg:p-12">
+                            <img src="../images/vmx-cloud-service.png" class="h-12 w-12 mr-5 mt-4" alt="">
+                            <div>
+                                <h4 class="text-2xl text-semibold mb-2">#1 Cloud Service Provider</h4>
+                                <p>WW VMX has assisted global businesses to transform their digital journey while they
+                                    connect, analyze, protect, and act on all sorts of data, right from edge to cloud.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex border border-gray-100 p-6 lg:p-12">
+                            <img src="../images/vmx-expert.png" class="h-12 w-12 mr-5 mt-4" alt="">
+                            <div>
+                                <h4 class="text-2xl text-semibold mb-2">Decades of Expertise</h4>
+                                <p>WW VMX holds more than two decades of industrial experience with 3 data centers in
+                                    India and 6 worldwide POPs.</p>
+                            </div>
+                        </div>
+                        <div class="flex border border-gray-100 p-6 lg:p-12">
+                            <img src="../images/vmx-solution.png" class="h-12 w-12 mr-5 mt-4" alt="">
+                            <div>
+                                <h4 class="text-2xl text-semibold mb-2">Customized Solutions</h4>
+                                <p>We emphasize delivering a superior user experience backed by a plethora of customized
+                                    solutions no matter how diverse or complex the customer business is</p>
+                            </div>
+                        </div>
+                        <div class="flex border border-gray-100 p-6 lg:p-12">
+                            <img src="../images/vmx-support.png" class="h-12 w-12 mr-5 mt-4" alt="">
+                            <div>
+                                <h4 class="text-2xl text-semibold mb-2">World-Class Support</h4>
+                                <p>No matter your business is a startup, SMB, leading enterprise, or a global leader,
+                                    our dexterous team of industry experts holds immense experience and market exposure
+                                    to take your HCI hyper converged infrastructure to new heights. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="location bg-[url('./images/hero-pattern.svg')]"> -->
+        <section class="location">
+            <div class="container mx-auto w-mx-6xl">
+                <div class="py-20 mx-8 lg:mx-14">
+                    <h2
+                        class="text-3xl font-bold text-center after:content-[''] after:mt-1.5 after:block after:m-auto after:h-1 after:bg-orange-400 after:w-16 text-kps-400 font-montserrat">
+                        Why Count on WW VMX?</h2>
+                    <div class="flex mt-16">
+                        <div class="bg-white shadow-lg text-center p-12 h-60 w-full lg:w-72 rounded-lg">
+                            <h1 class="text-6xl font-semibold text-orange-400 mb-2">3</h1>
+                            <h2 class="text-2xl font-semibold">WW Tier III <br>
+                                Data Centers </h2>
+                        </div>
+                    </div>
+                    <div class="lg:flex flex-row justify-between mt-4 w-full gap-28">
+                        <div class="lg:w-1/2">
+                            <div class="bg-white shadow-lg text-center p-10 h-56 w-full lg:w-72 lg:ml-24 rounded-lg">
+                                <h1 class="text-6xl font-semibold text-orange-400 mb-2">15+</h1>
+                                <h2 class="text-2xl font-semibold">Iron Mountains <br>
+                                    Data Centers </h2>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/2 map-border relative mt-6 lg:-mt-20">
+                            <div class="text-center lg:text-left">
+                                <h3 class="text-2xl lg:text-4xl font-semibold mb-3 lg:mb-4 text-center lg:text-left">Know the Bigger Picture
+                                </h3>
+                                <p class="text-lg">We care about our customers and hence try to provide all the
+                                    resources and technology so that the needs and problems of the Customer can be
+                                    resolved. The Future of this company beholds More Data Centers and
+                                    technological advancements.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer start-->
+        <section class="footer">
+            <div>
+                <div class="footer-top py-16 text-white">
+                    <div class="container mx-auto w-mx-6xl">
+                        <div class="mx-8 lg:mx-14 m-auto text-center">
+                            <h3 class="text-2xl lg:text-4xl font-bold mb-8">Speed Up Business Agility And Modernize Your <br>
+                                Apps With A Next-Gen Cloud Approach</h3>
+                            <button
+                                class="rounded-full bg-orange-400 text-lg py-1 px-4 md:px-8 lg:px-12 font-semibold">Book
+                                a Free Consultation Today!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom py-16 text-[#BDBFC9] bg-[#000A2D]">
+                    <div class="container mx-auto w-mx-6xl">
+                        <div class="lg:flex gap-6 mx-8 lg:mx-14 m-auto">
+                            <div class="flex lg:w-6/12">
+                                <div class="w-5/12 lg:w-5/12">
+                                    <h2 class="text-orange-400 font-extrabold text-2xl">VMX</h2>
+                                </div>
+                                <div class="w-7/12 lg:w-7/12">
+                                    <h3
+                                        class="text-lg mb-4 uppercase after:content-[''] after:block after:bg-orange-400 after:w-8 after:h-1">
+                                        Products</h3>
+                                    <ul class="font-md leading-7">
+                                        <li><a href="">VMX Infinite : Hosted Private Cloud</a></li>
+                                        <li><a href="">VMX-DR : Disaster Recovery-as-a-Service</a></li>
+                                        <li><a href="">Public Cloud as a Service</a></li>
+                                        <li><a href="">Connected Bare</a></li>
+                                        <li><a href="">Metals</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="flex lg:w-6/12 mt-5 lg:mt-0">
+                                <div class="w-5/12 lg:w-5/12">
+                                    <h3
+                                        class="text-lg mb-4 uppercase after:content-[''] after:block after:bg-orange-400 after:w-8 after:h-1">
+                                        Links</h3>
+                                    <ul class="font-md leading-7">
+                                        <li><a href="javascript:void(0)">Services</a></li>
+                                        <li><a href="javascript:void(0)">Case Study</a></li>
+                                        <li><a href="javascript:void(0)">About Us</a></li>
+                                        <li><a href="javascript:void(0)">Contacts</a></li>
+                                    </ul>
+                                </div>
+                                <div class="w-7/12 lg:w-7/12">
+                                    <h3
+                                        class="text-lg mb-4 uppercase after:content-[''] after:block after:bg-orange-400 after:w-8 after:h-1">
+                                        Contacts</h3>
+                                    <p class="mb-3 font-md">Feel free get in touch with us via <br
+                                            class="hidden lg:block"> phone or send us a message</p>
+                                    <ul class="font-md leading-7">
+                                        <li><a href="javascript:void(0)">+1 234 567 89 10</a></li>
+                                        <li><a href="javascript:void(0)">support@vmx.com</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer end-->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

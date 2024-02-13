@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+	<script src="../js/tailwind.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- Header -->
+		<div class="header shadow-lg px-6 xlg:px-0">
+			<!-- Navbar -->
+			<nav class="container mx-auto max-w-6xl">
+				<div class="flex justify-between md:block">
+					<div class="flex justify-between">
+						<div>
+							<!-- Website Logo -->
+							<a href="#" class="flex items-center py-4 px-2 pl-0">
+								<span class="font-bold text-lg text-orange-500 cursor-pointer">VMX</span>
+							</a>
+						</div>
+						<!-- Primary Navbar items -->
+						<div class="hidden md:flex items-center space-x-5 text-white navmenu">
+							<a href="http://127.0.0.1:5501/public/index.html"
+								class="px-4 text-lg cursor-pointer hover:text-rose-400">Products</a>
+							<a href="http://127.0.0.1:5501/public/service.html"
+								class="px-4 text-lg cursor-pointer hover:text-rose-400 active">Services</a>
+							<a href="javascript:void(0);" class="px-4 text-lg cursor-pointer hover:text-rose-400">Case
+								Study</a>
+							<a href="javascript:void(0);" class="px-4 text-lg cursor-pointer hover:text-rose-400">About
+								Us</a>
+							<a href="javascript:void(0);"
+								class="px-4 text-lg cursor-pointer hover:text-rose-400">Contact Us</a>
+						</div>
+					</div>
+					<!-- Mobile menu button -->
+					<div class="md:hidden flex items-center mr-3">
+						<button class="outline-none mobile-menu-button">
+							<svg class=" w-6 h-6 text-white brightness-1" x-show="!showMenu" fill="none"
+								stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+								stroke="currentColor">
+								<path d="M4 6h16M4 12h16M4 18h16"></path>
+							</svg>
+						</button>
+
+					</div>
+				</div>
+
+				<!-- mobile menu -->
+				<div class="hidden w-full mobile-menu text-white" id="mobile-menu">
+					<span id="closebtn" class="closebtn">X</span>
+					<ul class="">
+						<li href="http://127.0.0.1:5501/public/index.html" class="px-4 py-3 text-lg cursor-pointer">
+							Products</li>
+						<li href="javascript:void(0);" class="px-4 py-3 text-lg cursor-pointer">Services</li>
+						<li href="javascript:void(0);" class="px-4 py-3 text-lg cursor-pointer">Case Study</li>
+						<li href="javascript:void(0);" class="px-4 py-3 text-lg cursor-pointer">About Us</li>
+						<li href="javascript:void(0);" class="px-4 py-3 text-lg cursor-pointer">Contact Us
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<section class="service-banner w-full px-4">
+			<div class="px-6 xlg:px-0">
+				<div class="container mx-auto max-w-6xl">
+					<div class="service-text">
+						<h2 class="text-3xl uppercase font-bold text-white text-center">Pubic cloud as a <br> service
+						</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- cloud-public -->
+		<section>
+			<div class="container mx-auto w-mx-6xl">
+				<div class="py-20 mx-6 lg:mx-14">
+					<h2
+						class="text-3xl font-bold text-center after:content-[''] after:mt-1.5 after:block after:m-auto after:h-1 after:bg-orange-400 after:w-16 text-kps-400 font-montserrat">
+						Redefine Your Cloud <br>
+						Infrastructure with Public Cloud
+					</h2>
+					<div class="grid lg:grid-cols-2 mt-16">
+						<div class="m-auto">
+							<img src="../images/cloud-infra-side.png" class="h-84" alt="">
+						</div>
+						<div>
+							<p class="text-xl pt-6">Build once, skill once with no stress of code changes anymore in
+								your hyperconverged infrastructure! Coupled with the next-gen network and storage
+								infrastructure, servers, and cutting-edge tech vendors, we make your computing power
+								smart and advanced in the cloud. Public Cloud as a Service at WW VMX enables businesses
+								to experience on-demand scalability & flexibility, potent self-management and highly
+								optimized IT budgets.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- cloud-experiance -->
+		<section class="bg-[#FAFBFF]">
+			<div class="container mx-auto w-mx-6xl">
+				<div class="py-20 mx-6 lg:mx-14">
+					<div class="bg-[#FAFBFF]">
+						<h2
+							class="text-3xl font-bold text-center after:content-[''] after:mt-1.5 after:block after:m-auto after:h-1 after:bg-orange-400 after:w-16 text-kps-400 font-montserrat">
+							Fast-track Your Business with <br>
+							the Agility and a Flexible <br>
+							Cloud Experience
+						</h2>
+						<div class="grid lg:grid-cols-2 mt-16">
+							<div>
+								<p class="text-xl">Deploy public cloud infrastructure with WW VMX and experience
+									minimized operational complexity to migrate and extend the data and apps throughout
+									the clouds. WW VMX lets businesses get the most from the next-gen cloud infra where
+									they experience the ease of adopting private and public clouds for a hybrid
+									strategy. Experience the next-gen yet super-fast path to hybrid and multi-cloud.</p>
+								<ul class="mt-5 text-xl">
+									<li class="flex mb-2 gap-4">
+										<i class="zmdi zmdi-check-circle text-orange-400 text-xl"></i>
+										<span class="">Experience unified application mobility</span>
+									</li>
+									<li class="flex mb-2 gap-4">
+										<i class="zmdi zmdi-check-circle text-orange-400 text-xl"></i>
+										<span>App migration to public cloud without retooling</span>
+									</li>
+									<li class="flex mb-2 gap-4">
+										<i class="zmdi zmdi-check-circle text-orange-400 text-xl"></i>
+										<span>Minimized complexity with built-in<br>
+											integration into public cloud networking</span>
+									</li>
+									<li class="flex mb-2 gap-4">
+										<i class="zmdi zmdi-check-circle text-orange-400 text-xl"></i>
+										<span>Operational simplicity</span>
+									</li>
+									<li class="flex mb-2 gap-4">
+										<i class="zmdi zmdi-check-circle text-orange-400 text-xl"></i>
+										<span>Centralized infrastructure management</span>
+									</li>
+									<li class="flex mb-2 gap-4">
+										<i class="zmdi zmdi-check-circle text-orange-400 text-xl"></i>
+										<span>Productively utilize your cost intelligent
+											operations</span>
+									</li>
+								</ul>
+							</div>
+							<div class="m-auto">
+								<img src="../images/cloud-experiance.png" class="h-80" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- cloud-kubernetes -->
+		<section>
+			<div class="container mx-auto w-mx-6xl">
+				<div class="py-20 mx-6 lg:mx-14">
+					<h2
+						class="text-3xl font-bold text-center after:content-[''] after:mt-1.5 after:block after:m-auto after:h-1 after:bg-orange-400 after:w-16 text-kps-400 font-montserrat">
+						Simplified Kubernetes <br>
+						Management
+					</h2>
+					<div class="grid lg:grid-cols-2 mt-16">
+						<div class="m-auto">
+							<img src="../images/cloud-kubernets.png" class="h-84" alt="">
+						</div>
+						<div>
+							<p class="text-xl pt-6">Backed by the HCI hyperconverged infrastructure as the foundation,
+								we allow businesses to tackle their diverse Kubernetes and other complex distributed
+								systems requirements. WW VMX lets you manage the end-to-end Kubernetes environment with
+								push-button simplicity in a hassle-free manner. Easily integrate Kubernetes monitoring,
+								storage, logging, and alerting for the complete cloud-native stack.</p>
+							<ul class="mt-5 text-xl">
+								<li class="flex mb-2 gap-4">
+									<i class="zmdi zmdi-check-circle text-orange-400 text-xl"></i>
+									<span class="">Hassle-free & super-fast deployment</span>
+								</li>
+								<li class="flex mb-2 gap-4">
+									<i class="zmdi zmdi-check-circle text-orange-400 text-xl"></i>
+									<span>High scalability & no downtimes</span>
+								</li>
+								<li class="flex mb-2 gap-4">
+									<i class="zmdi zmdi-check-circle text-orange-400 text-xl"></i>
+									<span>Real-time alerts</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- cloud-develops -->
+		<section class="bg-[#FAFBFF]">
+			<div class="container mx-auto w-mx-6xl">
+				<div class="py-20 mx-6 lg:mx-14">
+					<div class="bg-[#FAFBFF]">
+						<h2
+							class="text-3xl font-bold text-center after:content-[''] after:mt-1.5 after:block after:m-auto after:h-1 after:bg-orange-400 after:w-16 text-kps-400 font-montserrat">
+							Accelerate DevOps & IT <br>
+							Operations
+						</h2>
+						<div class="grid lg:grid-cols-2 mt-16">
+							<div>
+								<p class="text-xl">Deploy public cloud infrastructure with WW VMX and experience
+									minimized operational complexity to migrate and extend the data and apps throughout
+									the clouds. WW VMX lets businesses get the most from the next-gen cloud infra where
+									they experience the ease of adopting private and public clouds for a hybrid
+									strategy. Experience the next-gen yet super-fast path to hybrid and multi-cloud.</p>
+								<ul class="mt-5 text-xl">
+									<li class="flex mb-2 gap-4">
+										<i class="zmdi zmdi-check-circle text-orange-400 text-xl"></i>
+										<span class="">Simplified IT operations & reduced
+											operational expenses</span>
+									</li>
+									<li class="flex mb-2 gap-4">
+										<i class="zmdi zmdi-check-circle text-orange-400 text-xl"></i>
+										<span>Enhanced software development &
+											testing with CI/CD pipelines</span>
+									</li>
+									<li class="flex mb-2 gap-4">
+										<i class="zmdi zmdi-check-circle text-orange-400 text-xl"></i>
+										<span>Minimize cloud spending</span>
+									</li>
+									<li class="flex mb-2 gap-4">
+										<i class="zmdi zmdi-check-circle text-orange-400 text-xl"></i>
+										<span>More scalability with automation</span>
+									</li>
+									<li class="flex mb-2 gap-4">
+										<i class="zmdi zmdi-check-circle text-orange-400 text-xl"></i>
+										<span>Experience the modern DevOps culture</span>
+									</li>
+								</ul>
+							</div>
+							<div class="m-auto">
+								<img src="../images/cloud-devops.png" class="h-80" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Cloud Infrastructure -->
+		<section>
+			<div class="container mx-auto w-mx-6xl">
+				<div class="py-20 mx-6 lg:mx-14">
+					<h2
+						class="text-3xl font-bold text-center after:content-[''] after:mt-1.5 after:block after:m-auto after:h-1 after:bg-orange-400 after:w-16 text-kps-400 font-montserrat">
+						Next-level Security to Safeguard <br>
+						Your Cloud Infrastructure
+					</h2>
+					<div class="grid lg:grid-cols-2 mt-16  gap-10 lg:gap-16">
+						<div class="m-auto">
+							<img src="../images/cloud-security.png" class="h-84" alt="">
+						</div>
+						<div>
+							<p class="text-xl pt-6">To strengthen your security posture and ensure enhanced security
+								through your cloud infrastructure, WW VMX is equipped with next-gen security practices
+								that not only detect and fixes the security threats but even prevent all probable data
+								losses to ensure business continuity at all times. No matter how diverse your network
+								is, we safeguard your business from data threats, network threats, and other
+								vulnerabilities.</p>
+							<ul class="mt-5 text-xl">
+								<li class="flex mb-2 gap-4">
+									<i class="zmdi zmdi-check-circle text-orange-400 text-xl"></i>
+									<span class="">Data encryption</span>
+								</li>
+								<li class="flex mb-2 gap-4">
+									<i class="zmdi zmdi-check-circle text-orange-400 text-xl"></i>
+									<span>Network microsegmentation</span>
+								</li>
+								<li class="flex mb-2 gap-4">
+									<i class="zmdi zmdi-check-circle text-orange-400 text-xl"></i>
+									<span>Platform hardening</span>
+								</li>
+								<li class="flex mb-2 gap-4">
+									<i class="zmdi zmdi-check-circle text-orange-400 text-xl"></i>
+									<span>Secure development lifecycle</span>
+								</li>
+								<li class="flex mb-2 gap-4">
+									<i class="zmdi zmdi-check-circle text-orange-400 text-xl"></i>
+									<span>Identity & access management</span>
+								</li>
+								<li class="flex mb-2 gap-4">
+									<i class="zmdi zmdi-check-circle text-orange-400 text-xl"></i>
+									<span>Compliance, audit, and reporting</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Smartly Store -->
+		<section class="bg-[#FAFBFF]">
+			<div class="container mx-auto w-mx-6xl">
+				<div class="py-20 mx-6 lg:mx-14">
+					<div class="bg-[#FAFBFF]">
+						<h2
+							class="text-3xl font-bold text-center after:content-[''] after:mt-1.5 after:block after:m-auto after:h-1 after:bg-orange-400 after:w-16 text-kps-400 font-montserrat">
+							Smartly Store, Manage & <br>
+							Control Your Data
+						</h2>
+						<div class="grid lg:grid-cols-2 mt-16">
+							<div>
+								<p class="text-xl">Manage, control, consolidate, store, and share the unstructured data
+									with perfection and make accurate decisions as never before. At WW VMX, we leverage
+									a data-first architecture that helps you scale and manage your data with ease and
+									make informed decisions in a hyperconverged infrastructure.</p>
+								<ul class="mt-5 text-xl">
+									<li class="flex mb-2 gap-4">
+										<i class="zmdi zmdi-check-circle text-orange-400 text-xl"></i>
+										<span class="">Visualize, control, and store data centrally</span>
+									</li>
+									<li class="flex mb-2 gap-4">
+										<i class="zmdi zmdi-check-circle text-orange-400 text-xl"></i>
+										<span>Advanced protection assuring no data
+											losses at all</span>
+									</li>
+									<li class="flex mb-2 gap-4">
+										<i class="zmdi zmdi-check-circle text-orange-400 text-xl"></i>
+										<span>100% data security and threat detection</span>
+									</li>
+									<li class="flex mb-2 gap-4">
+										<i class="zmdi zmdi-check-circle text-orange-400 text-xl"></i>
+										<span>Improved resource utilization</span>
+									</li>
+								</ul>
+							</div>
+							<div class="m-auto">
+								<img src="../images/cloud-store.png" class="h-80" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container mx-auto w-mx-6xl">
+				<div class="py-20 mx-6 lg:mx-14">
+					<h2
+						class="text-3xl font-bold text-center after:content-[''] after:mt-1.5 after:block after:m-auto after:h-1 after:bg-orange-400 after:w-16 text-kps-400 font-montserrat">
+						Make a Smart Switch to Hybrid <br>
+						and Multicloud Architecture
+					</h2>
+					<div class="grid lg:grid-cols-2 mt-16">
+						<div class="m-auto">
+							<img src="../images/cloud-multi.png" class="h-84" alt="">
+						</div>
+						<div>
+							<p class="text-xl pt-6">Manage your modern and traditional applications with a consistent
+								cloud platform that ensures simplicity, flexibility, and budget-friendliness for running
+								applications in public and private clouds. Minimize the operational complexity of
+								migration and experience super-fast yet hassle-free migration with no code changes. WW
+								VMX gives you the freedom to manage private and public cloud infrastructure operated and
+								thoroughly managed as a single cloud with perfection and ease.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- footer start-->
+		<section class="footer">
+			<div>
+				<div class="footer-top py-16 text-white">
+					<div class="container mx-auto w-mx-6xl">
+						<div class="mx-8 lg:mx-14 m-auto text-center">
+							<h3 class="text-2xl lg:text-4xl font-bold mb-8">Speed Up Business Agility And Modernize Your <br>
+								Apps With A Next-Gen Cloud Approach</h3>
+							<button
+								class="rounded-full bg-orange-400 text-lg py-1 px-4 md:px-8 lg:px-12 font-semibold">Book
+								a Free Consultation Today!</button>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom py-16 text-[#BDBFC9] bg-[#000A2D]">
+					<div class="container mx-auto w-mx-6xl">
+						<div class="lg:flex gap-6 mx-8 lg:mx-14 m-auto">
+							<div class="flex lg:w-6/12">
+								<div class="w-5/12 lg:w-5/12">
+									<h2 class="text-orange-400 font-extrabold text-2xl">VMX</h2>
+								</div>
+								<div class="w-7/12 lg:w-7/12">
+									<h3
+										class="text-lg mb-4 uppercase after:content-[''] after:block after:bg-orange-400 after:w-8 after:h-1">
+										Products</h3>
+									<ul class="font-md leading-7">
+										<li><a href="">VMX Infinite : Hosted Private Cloud</a></li>
+										<li><a href="">VMX-DR : Disaster Recovery-as-a-Service</a></li>
+										<li><a href="">Public Cloud as a Service</a></li>
+										<li><a href="">Connected Bare</a></li>
+										<li><a href="">Metals</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="flex lg:w-6/12 mt-5 lg:mt-0">
+								<div class="w-5/12 lg:w-5/12">
+									<h3
+										class="text-lg mb-4 uppercase after:content-[''] after:block after:bg-orange-400 after:w-8 after:h-1">
+										Links</h3>
+									<ul class="font-md leading-7">
+										<li><a href="javascript:void(0)">Services</a></li>
+										<li><a href="javascript:void(0)">Case Study</a></li>
+										<li><a href="javascript:void(0)">About Us</a></li>
+										<li><a href="javascript:void(0)">Contacts</a></li>
+									</ul>
+								</div>
+								<div class="w-7/12 lg:w-7/12">
+									<h3
+										class="text-lg mb-4 uppercase after:content-[''] after:block after:bg-orange-400 after:w-8 after:h-1">
+										Contacts</h3>
+									<p class="mb-3 font-md">Feel free get in touch with us via <br
+											class="hidden lg:block"> phone or send us a message</p>
+									<ul class="font-md leading-7">
+										<li><a href="javascript:void(0)">+1 234 567 89 10</a></li>
+										<li><a href="javascript:void(0)">support@vmx.com</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- footer end-->
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+	<script src="app.js"></script>
+</body>
+
+</html>
